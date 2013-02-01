@@ -1,0 +1,1336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>CXW_CSVManage: CXW::CSVManage类参考</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">CXW_CSVManage
+   &#160;<span id="projectnumber">V1.0</span>
+   </div>
+   <div id="projectbrief">CXW_CSVManage</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.8.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="classes.html"><span>组合类型索引</span></a></li>
+      <li><a href="functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="namespace_c_x_w.html">CXW</a>      </li>
+      <li class="navelem"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html">CSVManage</a>      </li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">组合类型</a> &#124;
+<a href="#pub-types">公有类型</a> &#124;
+<a href="#pub-methods">公有成员</a> &#124;
+<a href="#pub-static-methods">静态公有成员</a>  </div>
+  <div class="headertitle">
+<div class="title">CXW::CSVManage类参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>CSV文件管理类.  
+ <a href="class_c_x_w_1_1_c_s_v_manage.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_c_s_v_manage_8h_source.html">CSVManage.h</a>&gt;</code></p>
+
+<p><a href="class_c_x_w_1_1_c_s_v_manage-members.html">所有成员的列表。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+组合类型</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_x_w_1_1_c_s_v_manage_1_1_data_loca.html">DataLoca</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">数据位置  <a href="struct_c_x_w_1_1_c_s_v_manage_1_1_data_loca.html#details">更多...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+公有类型</h2></td></tr>
+<tr class="memitem:ad99b87fbcd661a9f9b8299122656f283"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ad99b87fbcd661a9f9b8299122656f283">ERROR_CODE</a> { <br/>
+&#160;&#160;<a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ad99b87fbcd661a9f9b8299122656f283a00ec6eeda248349f571dcf4e84ec79ef">SUCCESS</a> =  0, 
+<a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ad99b87fbcd661a9f9b8299122656f283ab167a4805ab5a67b8f4d6755e491d5ae">FILE_NAME_NULL</a> =  -1, 
+<a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ad99b87fbcd661a9f9b8299122656f283a4df33f52451c817b16f490dffb2ebe49">FILE_TOO_LARGE</a> =  -2, 
+<a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ad99b87fbcd661a9f9b8299122656f283a350f650fc32b0fa17f7d54625a9529db">FILE_CAN_NOT_FIND</a> =  -3, 
+<br/>
+&#160;&#160;<a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ad99b87fbcd661a9f9b8299122656f283ae40b68bf1b4d1193cfbae44167cbfafc">FILE_CAN_NOT_OPEN</a> =  -5, 
+<a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ad99b87fbcd661a9f9b8299122656f283a5f5a0d901028e5f1fef36862c96e5e3b">NUM_TOO_LARGE</a> =  -6, 
+<a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ad99b87fbcd661a9f9b8299122656f283a33c45ae017cd7f9f6545f0529a1b5876">NUM_TOO_LITTLE</a> =  -7, 
+<a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ad99b87fbcd661a9f9b8299122656f283a2b9aa614d4e136dec3dead0536126065">ROW_DO_NOT_EXIST</a> =  -8, 
+<br/>
+&#160;&#160;<a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ad99b87fbcd661a9f9b8299122656f283a80a4b234a06bab67c308201e3ab931c5">ROW_COL_NUM_ERROR</a> =  -9, 
+<a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ad99b87fbcd661a9f9b8299122656f283a65a05e20ad19c43ad06fb515a3a6d36c">TITLE_NOT_EXIST</a> =  -10, 
+<a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ad99b87fbcd661a9f9b8299122656f283a612b4e9647bbcf7f2bebff9e4bb7f2ee">TITLE_LEN_NOT_MATCH</a> =  -11
+<br/>
+ }</td></tr>
+<tr class="memdesc:ad99b87fbcd661a9f9b8299122656f283"><td class="mdescLeft">&#160;</td><td class="mdescRight">错误码枚举类型  <a href="class_c_x_w_1_1_c_s_v_manage.html#ad99b87fbcd661a9f9b8299122656f283">更多...</a><br/></td></tr>
+<tr class="memitem:a8bd8eeeb7e83173a7588479446dee976"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a8bd8eeeb7e83173a7588479446dee976">SORT_MODE</a> { <br/>
+&#160;&#160;<a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a8bd8eeeb7e83173a7588479446dee976a4c93b4e8af0299e5c99e95978f687c2d">STRING_A_TO_Z</a> =  1, 
+<a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a8bd8eeeb7e83173a7588479446dee976a77e4e65a073540b093aa5e2a90931be6">STRING_Z_TO_A</a> =  2, 
+<a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a8bd8eeeb7e83173a7588479446dee976ad9030ccd819284040418ddb814516655">STRING_Aa_TO_Zz</a> =  3, 
+<a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a8bd8eeeb7e83173a7588479446dee976a4472b83a9490668a63b02d76e7d73cfe">STRING_Zz_TO_Aa</a> =  4, 
+<br/>
+&#160;&#160;<a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a8bd8eeeb7e83173a7588479446dee976a8db0315ca6c69991a80495f20917799c">INT_LITTLE_TO_LARGE</a> =  5, 
+<a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a8bd8eeeb7e83173a7588479446dee976a5784cc8dbeab8dbaf27fcd548a2482c5">INT_LARGE_TO_LITTLE</a> =  6, 
+<a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a8bd8eeeb7e83173a7588479446dee976a3e534fb170aee58ad33158b1f2b8c2dd">FLOAT_LITTLE_TO_LARGE</a> =  7, 
+<a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a8bd8eeeb7e83173a7588479446dee976af5da77aee9474a8586076965e18391b3">FLOAT_LARGE_TO_LITTLE</a> =  8, 
+<br/>
+&#160;&#160;<a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a8bd8eeeb7e83173a7588479446dee976a5d1c3cf8f6e2bd44a6fb96e5a6c7717e">DOUBLE_LITTLE_TO_LARGE</a> =  9, 
+<a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a8bd8eeeb7e83173a7588479446dee976a2070b303a3cca3d6bd73eb560b30b933">DOUBLE_LARGE_TO_LITTLE</a> =  10
+<br/>
+ }</td></tr>
+<tr class="memdesc:a8bd8eeeb7e83173a7588479446dee976"><td class="mdescLeft">&#160;</td><td class="mdescRight">排序模式枚举类型  <a href="class_c_x_w_1_1_c_s_v_manage.html#a8bd8eeeb7e83173a7588479446dee976">更多...</a><br/></td></tr>
+<tr class="memitem:a9f595345965918c5ded59d644137d585"><td class="memItemLeft" align="right" valign="top">typedef vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a9f595345965918c5ded59d644137d585">Row</a></td></tr>
+<tr class="memdesc:a9f595345965918c5ded59d644137d585"><td class="mdescLeft">&#160;</td><td class="mdescRight">一行数据  <a href="#a9f595345965918c5ded59d644137d585"></a><br/></td></tr>
+<tr class="memitem:a837f66875528c761b13a2083c8a91ddd"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a9f595345965918c5ded59d644137d585">Row</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a837f66875528c761b13a2083c8a91ddd">Title</a></td></tr>
+<tr class="memdesc:a837f66875528c761b13a2083c8a91ddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">标题行  <a href="#a837f66875528c761b13a2083c8a91ddd"></a><br/></td></tr>
+<tr class="memitem:a9e47816ef2b546a4897689ead9997245"><td class="memItemLeft" align="right" valign="top">typedef vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a9e47816ef2b546a4897689ead9997245">Col</a></td></tr>
+<tr class="memdesc:a9e47816ef2b546a4897689ead9997245"><td class="mdescLeft">&#160;</td><td class="mdescRight">一列数据  <a href="#a9e47816ef2b546a4897689ead9997245"></a><br/></td></tr>
+<tr class="memitem:a66d7af72eefa545f75cef352eded0daf"><td class="memItemLeft" align="right" valign="top">typedef vector&lt; <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a9f595345965918c5ded59d644137d585">Row</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a66d7af72eefa545f75cef352eded0daf">Data</a></td></tr>
+<tr class="memdesc:a66d7af72eefa545f75cef352eded0daf"><td class="mdescLeft">&#160;</td><td class="mdescRight">全部数据  <a href="#a66d7af72eefa545f75cef352eded0daf"></a><br/></td></tr>
+<tr class="memitem:a585aeef116d210c4c5ef4d0ae8d8a15a"><td class="memItemLeft" align="right" valign="top">typedef vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a585aeef116d210c4c5ef4d0ae8d8a15a">SeqSig</a></td></tr>
+<tr class="memdesc:a585aeef116d210c4c5ef4d0ae8d8a15a"><td class="mdescLeft">&#160;</td><td class="mdescRight">排序标记  <a href="#a585aeef116d210c4c5ef4d0ae8d8a15a"></a><br/></td></tr>
+<tr class="memitem:ad9275cf989362f36e845eb51ae3b858c"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_c_x_w_1_1_c_s_v_manage_1_1_data_loca.html">DataLoca</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ad9275cf989362f36e845eb51ae3b858c">DataSize</a></td></tr>
+<tr class="memdesc:ad9275cf989362f36e845eb51ae3b858c"><td class="mdescLeft">&#160;</td><td class="mdescRight">数据规模  <a href="#ad9275cf989362f36e845eb51ae3b858c"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+公有成员</h2></td></tr>
+<tr class="memitem:aaffd73e92cc2549e70806359549306b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#aaffd73e92cc2549e70806359549306b9">CSVManage</a> (void)</td></tr>
+<tr class="memitem:adae34a03131d13db49f16e594230b041"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#adae34a03131d13db49f16e594230b041">~CSVManage</a> (void)</td></tr>
+<tr class="memitem:a971aa39095876c6aa4aefcaeaa1b8f72"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a971aa39095876c6aa4aefcaeaa1b8f72">hasTitle</a> () const </td></tr>
+<tr class="memdesc:a971aa39095876c6aa4aefcaeaa1b8f72"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断是否有标题行  <a href="#a971aa39095876c6aa4aefcaeaa1b8f72"></a><br/></td></tr>
+<tr class="memitem:a540b12b020313514a15f711c330cdf24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a837f66875528c761b13a2083c8a91ddd">Title</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a540b12b020313514a15f711c330cdf24">getTitle</a> () const </td></tr>
+<tr class="memdesc:a540b12b020313514a15f711c330cdf24"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取标题行  <a href="#a540b12b020313514a15f711c330cdf24"></a><br/></td></tr>
+<tr class="memitem:aec8c36022f4e36064fb5fb043ce6e84f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#aec8c36022f4e36064fb5fb043ce6e84f">delTitle</a> ()</td></tr>
+<tr class="memdesc:aec8c36022f4e36064fb5fb043ce6e84f"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除标题行  <a href="#aec8c36022f4e36064fb5fb043ce6e84f"></a><br/></td></tr>
+<tr class="memitem:a31c3a67a757713e0037c2b8154ec8749"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a31c3a67a757713e0037c2b8154ec8749">modifyTitle</a> (<a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a837f66875528c761b13a2083c8a91ddd">Title</a> title)</td></tr>
+<tr class="memdesc:a31c3a67a757713e0037c2b8154ec8749"><td class="mdescLeft">&#160;</td><td class="mdescRight">修改标题行  <a href="#a31c3a67a757713e0037c2b8154ec8749"></a><br/></td></tr>
+<tr class="memitem:abe1ea411262c57a58051fa78c2332fca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ad9275cf989362f36e845eb51ae3b858c">DataSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#abe1ea411262c57a58051fa78c2332fca">getDataSize</a> () const </td></tr>
+<tr class="memdesc:abe1ea411262c57a58051fa78c2332fca"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取数据规模  <a href="#abe1ea411262c57a58051fa78c2332fca"></a><br/></td></tr>
+<tr class="memitem:a719360364dd5871fd7163d8a9496351c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a719360364dd5871fd7163d8a9496351c">getRowSize</a> () const </td></tr>
+<tr class="memdesc:a719360364dd5871fd7163d8a9496351c"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取行个数  <a href="#a719360364dd5871fd7163d8a9496351c"></a><br/></td></tr>
+<tr class="memitem:a7adc913721208915c97f8b5390fa5bf5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a7adc913721208915c97f8b5390fa5bf5">getColSize</a> () const </td></tr>
+<tr class="memdesc:a7adc913721208915c97f8b5390fa5bf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取列个数  <a href="#a7adc913721208915c97f8b5390fa5bf5"></a><br/></td></tr>
+<tr class="memitem:aad6e4592958f6bf7647c594b3575b690"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#aad6e4592958f6bf7647c594b3575b690">newFile</a> (const char *filename, const <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a837f66875528c761b13a2083c8a91ddd">Title</a> &amp;title)</td></tr>
+<tr class="memdesc:aad6e4592958f6bf7647c594b3575b690"><td class="mdescLeft">&#160;</td><td class="mdescRight">新建文件  <a href="#aad6e4592958f6bf7647c594b3575b690"></a><br/></td></tr>
+<tr class="memitem:a0f47f5c8ef415d8506b94ec9102a6032"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a0f47f5c8ef415d8506b94ec9102a6032">loadFile</a> (const char *filename, bool hastitle=false)</td></tr>
+<tr class="memdesc:a0f47f5c8ef415d8506b94ec9102a6032"><td class="mdescLeft">&#160;</td><td class="mdescRight">载入文件  <a href="#a0f47f5c8ef415d8506b94ec9102a6032"></a><br/></td></tr>
+<tr class="memitem:a1d7ee4d08ac1eaf47f8446325ebaf844"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a1d7ee4d08ac1eaf47f8446325ebaf844">saveToFile</a> (const char *filename) const </td></tr>
+<tr class="memdesc:a1d7ee4d08ac1eaf47f8446325ebaf844"><td class="mdescLeft">&#160;</td><td class="mdescRight">保存到文件  <a href="#a1d7ee4d08ac1eaf47f8446325ebaf844"></a><br/></td></tr>
+<tr class="memitem:a95e33de0c53b9bec25ff8beaa0acf19e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a95e33de0c53b9bec25ff8beaa0acf19e">save</a> () const </td></tr>
+<tr class="memdesc:a95e33de0c53b9bec25ff8beaa0acf19e"><td class="mdescLeft">&#160;</td><td class="mdescRight">保存到默认文件  <a href="#a95e33de0c53b9bec25ff8beaa0acf19e"></a><br/></td></tr>
+<tr class="memitem:a00ae1c5ab92b65dbe3e5416e8578dc3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a9f595345965918c5ded59d644137d585">Row</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a00ae1c5ab92b65dbe3e5416e8578dc3f">getRow</a> (int rowNum) const </td></tr>
+<tr class="memdesc:a00ae1c5ab92b65dbe3e5416e8578dc3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">取一行内容  <a href="#a00ae1c5ab92b65dbe3e5416e8578dc3f"></a><br/></td></tr>
+<tr class="memitem:a671a86068f81143ac62310770758e32f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a9f595345965918c5ded59d644137d585">Row</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a671a86068f81143ac62310770758e32f">getRow</a> (int rowNum, int colStart, int colEnd) const </td></tr>
+<tr class="memdesc:a671a86068f81143ac62310770758e32f"><td class="mdescLeft">&#160;</td><td class="mdescRight">取一行内容  <a href="#a671a86068f81143ac62310770758e32f"></a><br/></td></tr>
+<tr class="memitem:a9093c07cb2e781c9386720ccc66faa7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a9e47816ef2b546a4897689ead9997245">Col</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a9093c07cb2e781c9386720ccc66faa7a">getCol</a> (int colNum) const </td></tr>
+<tr class="memdesc:a9093c07cb2e781c9386720ccc66faa7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">取一列内容  <a href="#a9093c07cb2e781c9386720ccc66faa7a"></a><br/></td></tr>
+<tr class="memitem:a50e0af3dd48f73f8bee251f4b22f4e2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a9e47816ef2b546a4897689ead9997245">Col</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a50e0af3dd48f73f8bee251f4b22f4e2f">getCol</a> (int colNum, int rowStart, int rowEnd) const </td></tr>
+<tr class="memdesc:a50e0af3dd48f73f8bee251f4b22f4e2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">取一列内容  <a href="#a50e0af3dd48f73f8bee251f4b22f4e2f"></a><br/></td></tr>
+<tr class="memitem:af232eb2a4ced6b58566f134eada35f51"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#af232eb2a4ced6b58566f134eada35f51">getXY</a> (int rowNum, int colNum) const </td></tr>
+<tr class="memdesc:af232eb2a4ced6b58566f134eada35f51"><td class="mdescLeft">&#160;</td><td class="mdescRight">取某个单元格的内容  <a href="#af232eb2a4ced6b58566f134eada35f51"></a><br/></td></tr>
+<tr class="memitem:a79af6dab96c74ffde913957ea1bba7f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a79af6dab96c74ffde913957ea1bba7f5">sort</a> (int colNum, <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a8bd8eeeb7e83173a7588479446dee976">SORT_MODE</a> sortMode=<a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a8bd8eeeb7e83173a7588479446dee976a4c93b4e8af0299e5c99e95978f687c2d">STRING_A_TO_Z</a>)</td></tr>
+<tr class="memdesc:a79af6dab96c74ffde913957ea1bba7f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">对内容按任意列的排序  <a href="#a79af6dab96c74ffde913957ea1bba7f5"></a><br/></td></tr>
+<tr class="memitem:a3f40842724e0b6f7310eb963d1b1bd9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a3f40842724e0b6f7310eb963d1b1bd9d">modify</a> (int rowNum, int colNum, const char *str)</td></tr>
+<tr class="memdesc:a3f40842724e0b6f7310eb963d1b1bd9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">修改某行某列的内容  <a href="#a3f40842724e0b6f7310eb963d1b1bd9d"></a><br/></td></tr>
+<tr class="memitem:ab77af6bec990064a5918c88fa8e304a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ab77af6bec990064a5918c88fa8e304a1">addRow</a> (<a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a9f595345965918c5ded59d644137d585">Row</a> row, int rowNum=0x7fffffff)</td></tr>
+<tr class="memdesc:ab77af6bec990064a5918c88fa8e304a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">增加一行内容  <a href="#ab77af6bec990064a5918c88fa8e304a1"></a><br/></td></tr>
+<tr class="memitem:a3e8be3f7f3b8d0758b6b08617b3a5702"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a3e8be3f7f3b8d0758b6b08617b3a5702">deleteRow</a> (int rowNum)</td></tr>
+<tr class="memdesc:a3e8be3f7f3b8d0758b6b08617b3a5702"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除一行内容  <a href="#a3e8be3f7f3b8d0758b6b08617b3a5702"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+静态公有成员</h2></td></tr>
+<tr class="memitem:a2f56ad931f44eb06410b3b622ed3e6f5"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a2f56ad931f44eb06410b3b622ed3e6f5">isFileLegal</a> (const char *filename)</td></tr>
+<tr class="memdesc:a2f56ad931f44eb06410b3b622ed3e6f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断文件名是否合法  <a href="#a2f56ad931f44eb06410b3b622ed3e6f5"></a><br/></td></tr>
+<tr class="memitem:ae4d56854a0a43ea142f8c658cc8e8efb"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ae4d56854a0a43ea142f8c658cc8e8efb">toCSVString</a> (const char *str)</td></tr>
+<tr class="memdesc:ae4d56854a0a43ea142f8c658cc8e8efb"><td class="mdescLeft">&#160;</td><td class="mdescRight">元素内容转为用于输出到CSV文件的格式  <a href="#ae4d56854a0a43ea142f8c658cc8e8efb"></a><br/></td></tr>
+<tr class="memitem:a436b336a781b82e0bf52b68e16a1f9ee"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a436b336a781b82e0bf52b68e16a1f9ee"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a436b336a781b82e0bf52b68e16a1f9ee">sortCol</a> (const vector&lt; T &gt; &amp;col, <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a585aeef116d210c4c5ef4d0ae8d8a15a">SeqSig</a> &amp;seqsig, bool li2la=true)</td></tr>
+<tr class="memdesc:a436b336a781b82e0bf52b68e16a1f9ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">模板方法，对数组进行排序  <a href="#a436b336a781b82e0bf52b68e16a1f9ee"></a><br/></td></tr>
+<tr class="memitem:ae78701a8c66c5dd99ae9247e31fed674"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a9f595345965918c5ded59d644137d585">Row</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ae78701a8c66c5dd99ae9247e31fed674">getRowFromStream</a> (fstream &amp;inf)</td></tr>
+<tr class="memdesc:ae78701a8c66c5dd99ae9247e31fed674"><td class="mdescLeft">&#160;</td><td class="mdescRight">从文件流获取一行内容  <a href="#ae78701a8c66c5dd99ae9247e31fed674"></a><br/></td></tr>
+<tr class="memitem:a8fd191855060e517871018ae89e31232"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a8fd191855060e517871018ae89e31232">addRowToStream</a> (fstream &amp;outf, const <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a9f595345965918c5ded59d644137d585">Row</a> &amp;row)</td></tr>
+<tr class="memdesc:a8fd191855060e517871018ae89e31232"><td class="mdescLeft">&#160;</td><td class="mdescRight">向文件流写入一行内容  <a href="#a8fd191855060e517871018ae89e31232"></a><br/></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>详细描述</h2>
+<div class="textblock"><p>CSV文件管理类. </p>
+<p>1.每个对象对应一个默认文件，新建或者载入文件会更改默认文件名称<br/>
+ 2.整个文件内容以二维数组的形式展现，使用 行标 和 列标 访问内容，所有下标从 0 开始<br/>
+ 3.支持以指定列内容的特定数据类型进行排序<br/>
+ 4.支持标题行，在载入时可以选择是否有标题行，标题行不在数据行范围内<br/>
+ 5.支持每个单元格元素内包含 [空格、制表符、双引号、逗号、换行符] 等特殊字符<br/>
+ 6.文件末尾的换行符不是必须的<br/>
+ 7.以标题行或者第一行内容确定整个文件每行的列数量，其余行的不足部分会被认为是空元素、超出部分会被忽略<br/>
+ 8.loadFile 和 newFile 会把CSV的所有内容载入到内存，适用于处理文件大小在 50Mb 以内的文件<br/>
+ 9.静态方法 getRowFromStream 和 addRowToStream 为个性化外部调用提供支持<br/>
+ </p>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8h_source.html">CSVManage.h</a>第<a class="el" href="_c_s_v_manage_8h_source.html#l00042">42</a>行定义。</p>
+</div><hr/><h2>成员类型定义文档</h2>
+<a class="anchor" id="a9e47816ef2b546a4897689ead9997245"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef vector&lt;string&gt; <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a9e47816ef2b546a4897689ead9997245">CXW::CSVManage::Col</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>一列数据 </p>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8h_source.html">CSVManage.h</a>第<a class="el" href="_c_s_v_manage_8h_source.html#l00095">95</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a66d7af72eefa545f75cef352eded0daf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef vector&lt;<a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a9f595345965918c5ded59d644137d585">Row</a>&gt; <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a66d7af72eefa545f75cef352eded0daf">CXW::CSVManage::Data</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>全部数据 </p>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8h_source.html">CSVManage.h</a>第<a class="el" href="_c_s_v_manage_8h_source.html#l00097">97</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad9275cf989362f36e845eb51ae3b858c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_c_x_w_1_1_c_s_v_manage_1_1_data_loca.html">DataLoca</a> <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ad9275cf989362f36e845eb51ae3b858c">CXW::CSVManage::DataSize</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>数据规模 </p>
+<p>数据规模结构体 </p>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8h_source.html">CSVManage.h</a>第<a class="el" href="_c_s_v_manage_8h_source.html#l00121">121</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f595345965918c5ded59d644137d585"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef vector&lt;string&gt; <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a9f595345965918c5ded59d644137d585">CXW::CSVManage::Row</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>一行数据 </p>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8h_source.html">CSVManage.h</a>第<a class="el" href="_c_s_v_manage_8h_source.html#l00091">91</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a585aeef116d210c4c5ef4d0ae8d8a15a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef vector&lt;int&gt; <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a585aeef116d210c4c5ef4d0ae8d8a15a">CXW::CSVManage::SeqSig</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>排序标记 </p>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8h_source.html">CSVManage.h</a>第<a class="el" href="_c_s_v_manage_8h_source.html#l00099">99</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a837f66875528c761b13a2083c8a91ddd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a9f595345965918c5ded59d644137d585">Row</a> <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a837f66875528c761b13a2083c8a91ddd">CXW::CSVManage::Title</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>标题行 </p>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8h_source.html">CSVManage.h</a>第<a class="el" href="_c_s_v_manage_8h_source.html#l00093">93</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>成员枚举类型文档</h2>
+<a class="anchor" id="ad99b87fbcd661a9f9b8299122656f283"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ad99b87fbcd661a9f9b8299122656f283">CXW::CSVManage::ERROR_CODE</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>错误码枚举类型 </p>
+<p>错误码 </p>
+<dl><dt><b>枚举值: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="ad99b87fbcd661a9f9b8299122656f283a00ec6eeda248349f571dcf4e84ec79ef"></a>SUCCESS</em>&nbsp;</td><td>
+<p>成功 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ad99b87fbcd661a9f9b8299122656f283ab167a4805ab5a67b8f4d6755e491d5ae"></a>FILE_NAME_NULL</em>&nbsp;</td><td>
+<p>文件名为空 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ad99b87fbcd661a9f9b8299122656f283a4df33f52451c817b16f490dffb2ebe49"></a>FILE_TOO_LARGE</em>&nbsp;</td><td>
+<p>文件过大，超过本程序的处理能力 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ad99b87fbcd661a9f9b8299122656f283a350f650fc32b0fa17f7d54625a9529db"></a>FILE_CAN_NOT_FIND</em>&nbsp;</td><td>
+<p>文件不存在 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ad99b87fbcd661a9f9b8299122656f283ae40b68bf1b4d1193cfbae44167cbfafc"></a>FILE_CAN_NOT_OPEN</em>&nbsp;</td><td>
+<p>文件无法打开 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ad99b87fbcd661a9f9b8299122656f283a5f5a0d901028e5f1fef36862c96e5e3b"></a>NUM_TOO_LARGE</em>&nbsp;</td><td>
+<p>数值过大 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ad99b87fbcd661a9f9b8299122656f283a33c45ae017cd7f9f6545f0529a1b5876"></a>NUM_TOO_LITTLE</em>&nbsp;</td><td>
+<p>数值过小 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ad99b87fbcd661a9f9b8299122656f283a2b9aa614d4e136dec3dead0536126065"></a>ROW_DO_NOT_EXIST</em>&nbsp;</td><td>
+<p>行不存在 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ad99b87fbcd661a9f9b8299122656f283a80a4b234a06bab67c308201e3ab931c5"></a>ROW_COL_NUM_ERROR</em>&nbsp;</td><td>
+<p>行的列数量不匹配 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ad99b87fbcd661a9f9b8299122656f283a65a05e20ad19c43ad06fb515a3a6d36c"></a>TITLE_NOT_EXIST</em>&nbsp;</td><td>
+<p>标题行不存在 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ad99b87fbcd661a9f9b8299122656f283a612b4e9647bbcf7f2bebff9e4bb7f2ee"></a>TITLE_LEN_NOT_MATCH</em>&nbsp;</td><td>
+<p>标题行长度不匹配 </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8h_source.html">CSVManage.h</a>第<a class="el" href="_c_s_v_manage_8h_source.html#l00052">52</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8bd8eeeb7e83173a7588479446dee976"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a8bd8eeeb7e83173a7588479446dee976">CXW::CSVManage::SORT_MODE</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>排序模式枚举类型 </p>
+<p>排序模式 </p>
+<dl><dt><b>枚举值: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a8bd8eeeb7e83173a7588479446dee976a4c93b4e8af0299e5c99e95978f687c2d"></a>STRING_A_TO_Z</em>&nbsp;</td><td>
+<p>字符串从 A 到 Z，判断大小写整型数据从小到大 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a8bd8eeeb7e83173a7588479446dee976a77e4e65a073540b093aa5e2a90931be6"></a>STRING_Z_TO_A</em>&nbsp;</td><td>
+<p>字符串从 Z 到 A，判断大小写整型数据从大到小 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a8bd8eeeb7e83173a7588479446dee976ad9030ccd819284040418ddb814516655"></a>STRING_Aa_TO_Zz</em>&nbsp;</td><td>
+<p>字符串从 A 到 Z，忽略大小写单精度浮点型数据从小到大 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a8bd8eeeb7e83173a7588479446dee976a4472b83a9490668a63b02d76e7d73cfe"></a>STRING_Zz_TO_Aa</em>&nbsp;</td><td>
+<p>字符串从 Z 到 A，忽略大小写单精度浮点型数据从大到小 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a8bd8eeeb7e83173a7588479446dee976a8db0315ca6c69991a80495f20917799c"></a>INT_LITTLE_TO_LARGE</em>&nbsp;</td><td>
+<p>整型数据从小到大 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a8bd8eeeb7e83173a7588479446dee976a5784cc8dbeab8dbaf27fcd548a2482c5"></a>INT_LARGE_TO_LITTLE</em>&nbsp;</td><td>
+<p>整型数据从大到小 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a8bd8eeeb7e83173a7588479446dee976a3e534fb170aee58ad33158b1f2b8c2dd"></a>FLOAT_LITTLE_TO_LARGE</em>&nbsp;</td><td>
+<p>单精度浮点型数据从小到大 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a8bd8eeeb7e83173a7588479446dee976af5da77aee9474a8586076965e18391b3"></a>FLOAT_LARGE_TO_LITTLE</em>&nbsp;</td><td>
+<p>单精度浮点型数据从大到小 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a8bd8eeeb7e83173a7588479446dee976a5d1c3cf8f6e2bd44a6fb96e5a6c7717e"></a>DOUBLE_LITTLE_TO_LARGE</em>&nbsp;</td><td>
+<p>双精度浮点型数据从小到大 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a8bd8eeeb7e83173a7588479446dee976a2070b303a3cca3d6bd73eb560b30b933"></a>DOUBLE_LARGE_TO_LITTLE</em>&nbsp;</td><td>
+<p>双精度浮点型数据从大到小 </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8h_source.html">CSVManage.h</a>第<a class="el" href="_c_s_v_manage_8h_source.html#l00073">73</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="aaffd73e92cc2549e70806359549306b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#aaffd73e92cc2549e70806359549306b9">CXW::CSVManage::CSVManage</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="_c_s_v_manage_8cpp_source.html">CSVManage.cpp</a>第<a class="el" href="_c_s_v_manage_8cpp_source.html#l00019">19</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="adae34a03131d13db49f16e594230b041"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#adae34a03131d13db49f16e594230b041">CXW::CSVManage::~CSVManage</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="_c_s_v_manage_8cpp_source.html">CSVManage.cpp</a>第<a class="el" href="_c_s_v_manage_8cpp_source.html#l00024">24</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="ab77af6bec990064a5918c88fa8e304a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ab77af6bec990064a5918c88fa8e304a1">CXW::CSVManage::addRow</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a9f595345965918c5ded59d644137d585">Row</a>&#160;</td>
+          <td class="paramname"><em>row</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rowNum</em> = <code>0x7fffffff</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>增加一行内容 </p>
+<p><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ab77af6bec990064a5918c88fa8e304a1" title="增加一行内容">addRow()</a> 增加一行内容到指定行位置</p>
+<dl class="section return"><dt>返回:</dt><dd>int as ERROR_CODE:<br/>
+ ROW_COL_NUM_ERROR <br/>
+ SUCCESS <br/>
+ </dd></dl>
+<dl class="section see"><dt>参见:</dt><dd><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ad99b87fbcd661a9f9b8299122656f283" title="错误码枚举类型">ERROR_CODE</a> </dd></dl>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">row</td><td>行的内容 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rowNum</td><td>行的序号，缺省参数为极大值，将添加行至文件末尾 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8cpp_source.html">CSVManage.cpp</a>第<a class="el" href="_c_s_v_manage_8cpp_source.html#l00937">937</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8fd191855060e517871018ae89e31232"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a8fd191855060e517871018ae89e31232">CXW::CSVManage::addRowToStream</a> </td>
+          <td>(</td>
+          <td class="paramtype">fstream &amp;&#160;</td>
+          <td class="paramname"><em>outf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a9f595345965918c5ded59d644137d585">Row</a> &amp;&#160;</td>
+          <td class="paramname"><em>row</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>向文件流写入一行内容 </p>
+<p><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a8fd191855060e517871018ae89e31232" title="向文件流写入一行内容">addRowToStream()</a> 向文件流写入一行内容</p>
+<dl class="section return"><dt>返回:</dt><dd>写入是否成功 </dd></dl>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">outf</td><td>文件流 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">row</td><td>需要写入的行 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8cpp_source.html">CSVManage.cpp</a>第<a class="el" href="_c_s_v_manage_8cpp_source.html#l00320">320</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3e8be3f7f3b8d0758b6b08617b3a5702"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a3e8be3f7f3b8d0758b6b08617b3a5702">CXW::CSVManage::deleteRow</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rowNum</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>删除一行内容 </p>
+<p><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a3e8be3f7f3b8d0758b6b08617b3a5702" title="删除一行内容">deleteRow()</a> 删除指定行</p>
+<dl class="section return"><dt>返回:</dt><dd>int as ERROR_CODE:<br/>
+ ROW_COL_NUM_ERROR <br/>
+ SUCCESS <br/>
+ </dd></dl>
+<dl class="section see"><dt>参见:</dt><dd><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ad99b87fbcd661a9f9b8299122656f283" title="错误码枚举类型">ERROR_CODE</a> </dd></dl>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rowNum</td><td>行的序号 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8cpp_source.html">CSVManage.cpp</a>第<a class="el" href="_c_s_v_manage_8cpp_source.html#l00973">973</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aec8c36022f4e36064fb5fb043ce6e84f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#aec8c36022f4e36064fb5fb043ce6e84f">CXW::CSVManage::delTitle</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>删除标题行 </p>
+<p><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#aec8c36022f4e36064fb5fb043ce6e84f" title="删除标题行">delTitle()</a> 删除标题行</p>
+<dl class="section return"><dt>返回:</dt><dd>空 </dd></dl>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8cpp_source.html">CSVManage.cpp</a>第<a class="el" href="_c_s_v_manage_8cpp_source.html#l00372">372</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9093c07cb2e781c9386720ccc66faa7a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a9e47816ef2b546a4897689ead9997245">CSVManage::Col</a> <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a9093c07cb2e781c9386720ccc66faa7a">CXW::CSVManage::getCol</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colNum</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>取一列内容 </p>
+<p><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a9093c07cb2e781c9386720ccc66faa7a" title="取一列内容">getCol()</a> 取一列内容，如果内容不存在，返回空列</p>
+<dl class="section return"><dt>返回:</dt><dd>指定列内容 </dd></dl>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">colNum</td><td>列号 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8cpp_source.html">CSVManage.cpp</a>第<a class="el" href="_c_s_v_manage_8cpp_source.html#l00726">726</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a50e0af3dd48f73f8bee251f4b22f4e2f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a9e47816ef2b546a4897689ead9997245">CSVManage::Col</a> <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a9093c07cb2e781c9386720ccc66faa7a">CXW::CSVManage::getCol</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rowStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rowEnd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>取一列内容 </p>
+<p><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a9093c07cb2e781c9386720ccc66faa7a" title="取一列内容">getCol()</a> 取一列内容，如果内容不存在，返回空列</p>
+<dl class="section return"><dt>返回:</dt><dd>指定列内容 </dd></dl>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">colNum</td><td>列号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rowStart</td><td>行的起始编号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rowEnd</td><td>行的终止编号 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8cpp_source.html">CSVManage.cpp</a>第<a class="el" href="_c_s_v_manage_8cpp_source.html#l00746">746</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a7adc913721208915c97f8b5390fa5bf5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a7adc913721208915c97f8b5390fa5bf5">CXW::CSVManage::getColSize</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>获取列个数 </p>
+<p><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a7adc913721208915c97f8b5390fa5bf5" title="获取列个数">getColSize()</a> 获取列个数</p>
+<dl class="section return"><dt>返回:</dt><dd>列个数 </dd></dl>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8cpp_source.html">CSVManage.cpp</a>第<a class="el" href="_c_s_v_manage_8cpp_source.html#l00420">420</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="abe1ea411262c57a58051fa78c2332fca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ad9275cf989362f36e845eb51ae3b858c">CSVManage::DataSize</a> <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#abe1ea411262c57a58051fa78c2332fca">CXW::CSVManage::getDataSize</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>获取数据规模 </p>
+<p><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#abe1ea411262c57a58051fa78c2332fca" title="获取数据规模">getDataSize()</a> 获取数据规模</p>
+<dl class="section return"><dt>返回:</dt><dd>数据规模 DataSize </dd></dl>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8cpp_source.html">CSVManage.cpp</a>第<a class="el" href="_c_s_v_manage_8cpp_source.html#l00403">403</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a00ae1c5ab92b65dbe3e5416e8578dc3f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a9f595345965918c5ded59d644137d585">CSVManage::Row</a> <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a00ae1c5ab92b65dbe3e5416e8578dc3f">CXW::CSVManage::getRow</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rowNum</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>取一行内容 </p>
+<p><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a00ae1c5ab92b65dbe3e5416e8578dc3f" title="取一行内容">getRow()</a> 取一行内容，如果内容不存在，返回空行</p>
+<dl class="section return"><dt>返回:</dt><dd>指定行内容 </dd></dl>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rowNum</td><td>行号 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8cpp_source.html">CSVManage.cpp</a>第<a class="el" href="_c_s_v_manage_8cpp_source.html#l00684">684</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a671a86068f81143ac62310770758e32f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a9f595345965918c5ded59d644137d585">CSVManage::Row</a> <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a00ae1c5ab92b65dbe3e5416e8578dc3f">CXW::CSVManage::getRow</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rowNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colEnd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>取一行内容 </p>
+<p><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a00ae1c5ab92b65dbe3e5416e8578dc3f" title="取一行内容">getRow()</a> 取一行内容，如果内容不存在，返回空行</p>
+<dl class="section return"><dt>返回:</dt><dd>指定行内容 </dd></dl>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rowNum</td><td>行号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">colStart</td><td>列的起始编号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">colEnd</td><td>列的终止编号 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8cpp_source.html">CSVManage.cpp</a>第<a class="el" href="_c_s_v_manage_8cpp_source.html#l00700">700</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ae78701a8c66c5dd99ae9247e31fed674"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a9f595345965918c5ded59d644137d585">CSVManage::Row</a> <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ae78701a8c66c5dd99ae9247e31fed674">CXW::CSVManage::getRowFromStream</a> </td>
+          <td>(</td>
+          <td class="paramtype">fstream &amp;&#160;</td>
+          <td class="paramname"><em>inf</em></td><td>)</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>从文件流获取一行内容 </p>
+<p><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ae78701a8c66c5dd99ae9247e31fed674" title="从文件流获取一行内容">getRowFromStream()</a> 从文件流获取一行内容</p>
+<dl class="section return"><dt>返回:</dt><dd>本行内容，如果行不存在则返回空行 </dd></dl>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">inf</td><td>文件流 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8cpp_source.html">CSVManage.cpp</a>第<a class="el" href="_c_s_v_manage_8cpp_source.html#l00204">204</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a719360364dd5871fd7163d8a9496351c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a719360364dd5871fd7163d8a9496351c">CXW::CSVManage::getRowSize</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>获取行个数 </p>
+<p><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a719360364dd5871fd7163d8a9496351c" title="获取行个数">getRowSize()</a> 获取行个数</p>
+<dl class="section return"><dt>返回:</dt><dd>行个数 </dd></dl>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8cpp_source.html">CSVManage.cpp</a>第<a class="el" href="_c_s_v_manage_8cpp_source.html#l00413">413</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a540b12b020313514a15f711c330cdf24"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a837f66875528c761b13a2083c8a91ddd">CSVManage::Title</a> <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a540b12b020313514a15f711c330cdf24">CXW::CSVManage::getTitle</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>获取标题行 </p>
+<p><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a540b12b020313514a15f711c330cdf24" title="获取标题行">getTitle()</a> 获取标题行如果没有标题行，返回空Title</p>
+<dl class="section return"><dt>返回:</dt><dd>标题行内容 </dd></dl>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8cpp_source.html">CSVManage.cpp</a>第<a class="el" href="_c_s_v_manage_8cpp_source.html#l00357">357</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="af232eb2a4ced6b58566f134eada35f51"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#af232eb2a4ced6b58566f134eada35f51">CXW::CSVManage::getXY</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rowNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colNum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>取某个单元格的内容 </p>
+<p><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#af232eb2a4ced6b58566f134eada35f51" title="取某个单元格的内容">getXY()</a> 按坐标取值，取某个单元格的内容</p>
+<dl class="section return"><dt>返回:</dt><dd>指定单元格的内容 </dd></dl>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rowNum</td><td>行的序号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">colNum</td><td>列的序号 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8cpp_source.html">CSVManage.cpp</a>第<a class="el" href="_c_s_v_manage_8cpp_source.html#l00772">772</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a971aa39095876c6aa4aefcaeaa1b8f72"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a971aa39095876c6aa4aefcaeaa1b8f72">CXW::CSVManage::hasTitle</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>判断是否有标题行 </p>
+<p><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a971aa39095876c6aa4aefcaeaa1b8f72" title="判断是否有标题行">hasTitle()</a> 判断是否有标题行</p>
+<dl class="section return"><dt>返回:</dt><dd>是否有标题行 </dd></dl>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8cpp_source.html">CSVManage.cpp</a>第<a class="el" href="_c_s_v_manage_8cpp_source.html#l00350">350</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f56ad931f44eb06410b3b622ed3e6f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a2f56ad931f44eb06410b3b622ed3e6f5">CXW::CSVManage::isFileLegal</a> </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>判断文件名是否合法 </p>
+<p><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a2f56ad931f44eb06410b3b622ed3e6f5" title="判断文件名是否合法">isFileLegal()</a>判断文件名是否合法</p>
+<dl class="section return"><dt>返回:</dt><dd>int as ERROR_CODE:<br/>
+ FILE_NAME_NULL <br/>
+ FILE_CAN_NOT_OPEN <br/>
+ SUCCESS <br/>
+ </dd></dl>
+<dl class="section see"><dt>参见:</dt><dd><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ad99b87fbcd661a9f9b8299122656f283" title="错误码枚举类型">ERROR_CODE</a> </dd></dl>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件名 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8cpp_source.html">CSVManage.cpp</a>第<a class="el" href="_c_s_v_manage_8cpp_source.html#l00068">68</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0f47f5c8ef415d8506b94ec9102a6032"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a0f47f5c8ef415d8506b94ec9102a6032">CXW::CSVManage::loadFile</a> </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>hastitle</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>载入文件 </p>
+<p><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a0f47f5c8ef415d8506b94ec9102a6032" title="载入文件">loadFile()</a> 载入文件名为filename的文件</p>
+<dl class="section return"><dt>返回:</dt><dd>是否成功 </dd></dl>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hastitle</td><td>是否有标题行 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8cpp_source.html">CSVManage.cpp</a>第<a class="el" href="_c_s_v_manage_8cpp_source.html#l00450">450</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3f40842724e0b6f7310eb963d1b1bd9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a3f40842724e0b6f7310eb963d1b1bd9d">CXW::CSVManage::modify</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rowNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>修改某行某列的内容 </p>
+<p><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a3f40842724e0b6f7310eb963d1b1bd9d" title="修改某行某列的内容">modify()</a>修改某行某列的内容为指定的字符串</p>
+<dl class="section return"><dt>返回:</dt><dd>空 </dd></dl>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rowNum</td><td>行的序号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">colNum</td><td>列的序号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">str</td><td>输入字符串 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8cpp_source.html">CSVManage.cpp</a>第<a class="el" href="_c_s_v_manage_8cpp_source.html#l00916">916</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a31c3a67a757713e0037c2b8154ec8749"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a31c3a67a757713e0037c2b8154ec8749">CXW::CSVManage::modifyTitle</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a837f66875528c761b13a2083c8a91ddd">Title</a>&#160;</td>
+          <td class="paramname"><em>title</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>修改标题行 </p>
+<p><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a31c3a67a757713e0037c2b8154ec8749" title="修改标题行">modifyTitle()</a> 修改标题行，只有当标题行已存在是才能修改，并且标题行长度必须和原长度保持一致</p>
+<dl class="section return"><dt>返回:</dt><dd>标题行内容 </dd></dl>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">title</td><td>标题行内容 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8cpp_source.html">CSVManage.cpp</a>第<a class="el" href="_c_s_v_manage_8cpp_source.html#l00380">380</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aad6e4592958f6bf7647c594b3575b690"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#aad6e4592958f6bf7647c594b3575b690">CXW::CSVManage::newFile</a> </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a837f66875528c761b13a2083c8a91ddd">Title</a> &amp;&#160;</td>
+          <td class="paramname"><em>title</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>新建文件 </p>
+<p><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#aad6e4592958f6bf7647c594b3575b690" title="新建文件">newFile()</a> 新建文件，默认文件会变成此文件，数据会被清空</p>
+<dl class="section return"><dt>返回:</dt><dd>是否成功 </dd></dl>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件名 </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">title</td><td>标题行，如果为空，则没有标题行 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8cpp_source.html">CSVManage.cpp</a>第<a class="el" href="_c_s_v_manage_8cpp_source.html#l00427">427</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a95e33de0c53b9bec25ff8beaa0acf19e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a95e33de0c53b9bec25ff8beaa0acf19e">CXW::CSVManage::save</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>保存到默认文件 </p>
+<p><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a95e33de0c53b9bec25ff8beaa0acf19e" title="保存到默认文件">save()</a> 保存到默认文件</p>
+<dl class="section return"><dt>返回:</dt><dd>是否成功 </dd></dl>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8cpp_source.html">CSVManage.cpp</a>第<a class="el" href="_c_s_v_manage_8cpp_source.html#l00669">669</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a1d7ee4d08ac1eaf47f8446325ebaf844"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a1d7ee4d08ac1eaf47f8446325ebaf844">CXW::CSVManage::saveToFile</a> </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>保存到文件 </p>
+<p><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a1d7ee4d08ac1eaf47f8446325ebaf844" title="保存到文件">saveToFile()</a> 保存到文件</p>
+<dl class="section return"><dt>返回:</dt><dd>是否成功 </dd></dl>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>文件名 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8cpp_source.html">CSVManage.cpp</a>第<a class="el" href="_c_s_v_manage_8cpp_source.html#l00625">625</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a79af6dab96c74ffde913957ea1bba7f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a79af6dab96c74ffde913957ea1bba7f5">CXW::CSVManage::sort</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a8bd8eeeb7e83173a7588479446dee976">SORT_MODE</a>&#160;</td>
+          <td class="paramname"><em>sortMode</em> = <code><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a8bd8eeeb7e83173a7588479446dee976a4c93b4e8af0299e5c99e95978f687c2d">STRING_A_TO_Z</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>对内容按任意列的排序 </p>
+<p><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a79af6dab96c74ffde913957ea1bba7f5" title="对内容按任意列的排序">sort()</a> 对整个文件的内容按照第colNum列的sortMode类型进行排序</p>
+<dl class="section return"><dt>返回:</dt><dd>空 </dd></dl>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">colNum</td><td>列的序号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sortMode</td><td>排序类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8cpp_source.html">CSVManage.cpp</a>第<a class="el" href="_c_s_v_manage_8cpp_source.html#l00793">793</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a436b336a781b82e0bf52b68e16a1f9ee"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a436b336a781b82e0bf52b68e16a1f9ee">CXW::CSVManage::sortCol</a> </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>col</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a585aeef116d210c4c5ef4d0ae8d8a15a">SeqSig</a> &amp;&#160;</td>
+          <td class="paramname"><em>seqsig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>li2la</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>模板方法，对数组进行排序 </p>
+<p><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#a436b336a781b82e0bf52b68e16a1f9ee" title="模板方法，对数组进行排序">sortCol()</a>对类型为T的vector进行排序，输出排序后的顺序编号seqsig</p>
+<dl class="section return"><dt>返回:</dt><dd>空 </dd></dl>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">col</td><td>排序的数组 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">seqsig</td><td>输出排序后的顺序编号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">li2la</td><td>是否从小到大排序 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8cpp_source.html">CSVManage.cpp</a>第<a class="el" href="_c_s_v_manage_8cpp_source.html#l00154">154</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ae4d56854a0a43ea142f8c658cc8e8efb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string <a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ae4d56854a0a43ea142f8c658cc8e8efb">CXW::CSVManage::toCSVString</a> </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>元素内容转为用于输出到CSV文件的格式 </p>
+<p><a class="el" href="class_c_x_w_1_1_c_s_v_manage.html#ae4d56854a0a43ea142f8c658cc8e8efb" title="元素内容转为用于输出到CSV文件的格式">toCSVString()</a>元素内容转为用于输出到CSV文件的格式</p>
+<dl class="section return"><dt>返回:</dt><dd>转换后的字符串 </dd></dl>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">str</td><td>源字符串 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件<a class="el" href="_c_s_v_manage_8cpp_source.html">CSVManage.cpp</a>第<a class="el" href="_c_s_v_manage_8cpp_source.html#l00093">93</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li>D:/MyExample/CPlusPlus/SimpleLearn/24.CSVManTest/<a class="el" href="_c_s_v_manage_8h_source.html">CSVManage.h</a></li>
+<li>D:/MyExample/CPlusPlus/SimpleLearn/24.CSVManTest/<a class="el" href="_c_s_v_manage_8cpp_source.html">CSVManage.cpp</a></li>
+</ul>
+</div><!-- contents -->
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年七月13日 星期五 16:53:02 for CXW_CSVManage by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.0
+</small></address>
+
+</body>
+</html>
